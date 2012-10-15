@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="280.0dip" android:stretchColumns="1" android:shrinkColumns="1">
+        <TableRow style="@style/InformationItemStyle">
+            <TextView android:text="@string/file_info_title" style="@style/InformationItemTitleStyle" />
+            <HorizontalScrollView android:scrollbars="none">
+                <TextView android:id="@id/information_title" style="@style/InformationTextStyle" />
+            </HorizontalScrollView>
+        </TableRow>
+        <TableRow style="@style/InformationItemStyle">
+            <TextView android:text="@string/file_info_create_time" style="@style/InformationItemTitleStyle" />
+            <TextView android:id="@id/information_create_time" style="@style/InformationTextStyle" />
+        </TableRow>
+        <TableRow style="@style/InformationItemStyle">
+            <TextView android:text="@string/file_info_path" style="@style/InformationItemTitleStyle" />
+            <HorizontalScrollView android:scrollbars="none">
+                <TextView android:id="@id/information_path" style="@style/InformationTextStyle" />
+            </HorizontalScrollView>
+        </TableRow>
+        <TableRow android:id="@id/dimension" style="@style/InformationItemStyle">
+            <TextView android:text="@string/file_info_dimension" style="@style/InformationItemTitleStyle" />
+            <TextView android:id="@id/information_dimension" style="@style/InformationTextStyle" />
+        </TableRow>
+        <TableRow android:id="@id/duration" style="@style/InformationItemStyle">
+            <TextView android:text="@string/file_info_duration" style="@style/InformationItemTitleStyle" />
+            <TextView android:id="@id/information_duration" style="@style/InformationTextStyle" />
+        </TableRow>
+        <TableRow style="@style/InformationItemStyle">
+            <TextView android:text="@string/file_info_size" style="@style/InformationItemTitleStyle" />
+            <TextView android:id="@id/information_size" style="@style/InformationTextStyle" />
+        </TableRow>
+        <TableRow style="@style/InformationItemStyle">
+            <TextView android:text="@string/file_info_geo_location" style="@style/InformationItemTitleStyle" />
+            <FrameLayout>
+                <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+                <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/information_location" android:text="@string/unknown_location" style="@style/InformationTextStyle" />
+                </HorizontalScrollView>
+            </FrameLayout>
+        </TableRow>
+    </TableLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.FloatPanelView android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/panel" android:background="@miui:drawable/textview_panel_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/view_image_button" android:text="@string/view" style="@*miui:style/TextViewFloatPanelButton" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@miui:drawable/textview_panel_separator" />
+        <TextView android:id="@id/replace_image_button" android:text="@string/replace" style="@*miui:style/TextViewFloatPanelButton" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@miui:drawable/textview_panel_separator" />
+        <TextView android:id="@id/remove_image_button" android:text="@string/remove" style="@*miui:style/TextViewFloatPanelButton" />
+    </LinearLayout>
+    <ImageView android:id="@id/arrow_up" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@miui:drawable/textview_panel_arrow_up" />
+    <ImageView android:id="@id/arrow_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@miui:drawable/textview_panel_arrow_down" />
+</com.android.mms.ui.FloatPanelView>

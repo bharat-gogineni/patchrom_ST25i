@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/wallpaper_title_bar" android:layout_width="fill_parent" android:layout_height="500.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/tab_lockscreen" style="@style/WallpaperTabLinearLayout">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tab_lockscreen_text" android:text="@string/tab_lockscreen_text" style="@style/WallpaperTabText" />
+                <ImageView android:id="@id/drag_seprator" style="@style/WallpaperTabSeprator" />
+            </LinearLayout>
+            <ImageView android:id="@id/tab_lockscreen_bottom_line" style="@style/WallpaperTabBottomLine" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/tab_wallpaper" style="@style/WallpaperTabLinearLayout">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tab_wallpaper_text" android:text="@string/tab_wallpaper_text" style="@style/WallpaperTabText" />
+                <ImageView android:id="@id/drag_seprator" style="@style/WallpaperTabSeprator" />
+            </LinearLayout>
+            <ImageView android:id="@id/tab_wallpaper_bottom_line" style="@style/WallpaperTabBottomLine" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/tab_all" style="@style/WallpaperTabLinearLayout">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tab_all_text" android:text="@string/tab_all_text" style="@style/WallpaperTabText" />
+            </LinearLayout>
+            <ImageView android:id="@id/tab_all_bottom_line" style="@style/WallpaperTabBottomLine" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

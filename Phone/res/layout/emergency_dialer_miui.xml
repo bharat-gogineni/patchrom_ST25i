@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="42.0sp" android:textColor="@*android:color/white" android:textColorHint="@*android:color/white" android:gravity="center" android:id="@id/digits" android:background="@*android:color/transparent" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:hint="@string/emergency_enable_radio_dialog_title" android:maxLines="1" android:scrollHorizontally="true" android:freezesText="true" android:layout_weight="1.0" />
+    <FrameLayout android:background="@drawable/ecc_keypad_bg_miui" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/ecc_keypad_fg_miui">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/emergency_dialpad_miui" />
+            <include layout="@layout/dialpad_additional_buttons_miui" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

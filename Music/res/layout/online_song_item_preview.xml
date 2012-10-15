@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/online_song_item_preview" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/preview_item_num_text" android:textStyle="bold" android:textColor="@color/preview_item_number_text" android:gravity="left|center" android:id="@id/song_number" android:background="@drawable/category_num_bg" android:paddingLeft="4.0dip" android:layout_width="14.699982dip" android:layout_height="15.299988dip" android:layout_marginTop="8.5dip" android:layout_marginRight="10.0dip" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="@dimen/preview_item_title_text" android:textColor="@color/preview_item_title_text" android:gravity="bottom" android:id="@id/song_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:singleLine="true" android:layout_toRightOf="@id/song_number" android:layout_alignParentTop="true" />
+    <TextView android:textSize="@dimen/preview_item_descript_text" android:textColor="@color/preview_item_descript_text" android:gravity="top" android:id="@id/artist_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:maxWidth="100.0dip" android:layout_toRightOf="@id/song_number" android:layout_below="@id/song_name" />
+</RelativeLayout>

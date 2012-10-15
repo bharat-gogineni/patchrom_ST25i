@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/sip_add_account_tip_text" android:layout_width="fill_parent" android:layout_height="250.0dip" android:text="@string/sip_add_account_tip_text" style=":style/TextAppearance.ListView.SecondaryItem" />
+</LinearLayout>

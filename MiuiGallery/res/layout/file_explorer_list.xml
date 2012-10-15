@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/page_layout_root" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:colorBackgroundCacheHint="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="@dimen/album_page_title_height" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/file_explorer_list_margin_left" android:layout_marginRight="@dimen/file_explorer_list_margin_right">
+        <ImageView android:id="@id/path_pane_up_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.659973dip" android:src="@drawable/path_up_level" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/current_path_pane" android:background="@drawable/path_pane_bg" android:layout_width="0.0dip" android:layout_height="@dimen/file_explorer_path_height" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/title_secondary_text_size" android:textColor="@*android:color/white" android:ellipsize="start" android:gravity="center_vertical" android:id="@id/current_path_view" android:paddingLeft="@dimen/file_explorer_path_text_padding" android:paddingRight="@dimen/file_explorer_path_text_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" style="@style/DeepStyle" />
+            <ImageView android:id="@id/path_pane_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.659973dip" android:src="@drawable/path_pane_arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="27.0px" android:textColor="#ffe2e2e2" android:layout_gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_file" android:singleLine="true" android:drawableTop="@drawable/empty_icon" android:drawablePadding="16.0dip" />
+        <TextView android:textSize="27.0px" android:textColor="#ffe2e2e2" android:gravity="center" android:id="@id/sd_absence_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sd_not_available" android:singleLine="true" android:drawableTop="@drawable/sd_not_available" android:drawablePadding="16.0dip" />
+        <EditableListView android:id="@id/file_path_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/file_explorer_list_margin_left" android:cacheColorHint="@*android:color/transparent" android:divider="@drawable/listview_divider" android:dividerHeight="1.0px" android:fastScrollEnabled="true" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+        <ScrollView android:id="@id/dropdown_navigation" android:background="@drawable/path_scroll_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/file_explorer_list_navigation_margint_left" android:layout_marginRight="@dimen/file_explorer_list_margin_right" android:overScrollMode="never">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/dropdown_navigation_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">Tiada WLAN.</string>
+    <string name="accessibility_wifi_one_bar">WLAN satu bar.</string>
+    <string name="accessibility_wifi_two_bars">WLAN dua bar.</string>
+    <string name="accessibility_wifi_three_bars">WLAN tiga bar.</string>
+    <string name="accessibility_wifi_signal_full">Isyarat WLAN penuh.</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">WLAN disambungkan</string>
+</resources>

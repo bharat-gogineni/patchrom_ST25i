@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">Walang WLAN.</string>
+    <string name="accessibility_wifi_one_bar">WLAN na isang bar.</string>
+    <string name="accessibility_wifi_two_bars">WLAN na dalawang bar.</string>
+    <string name="accessibility_wifi_three_bars">WLAN na tatlong bar.</string>
+    <string name="accessibility_wifi_signal_full">Puno ang signal ng WLAN.</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">nakakonekta sa WLAN</string>
+</resources>

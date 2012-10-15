@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">Không có WLAN.</string>
+    <string name="accessibility_wifi_one_bar">Tín hiệu WLAN một vạch.</string>
+    <string name="accessibility_wifi_two_bars">Tín hiệu WLAN hai vạch.</string>
+    <string name="accessibility_wifi_three_bars">Tín hiệu WLAN ba vạch.</string>
+    <string name="accessibility_wifi_signal_full">Tín hiệu WLAN đầy đủ.</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">Đã kết nối WLAN</string>
+</resources>

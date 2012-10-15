@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">Pas de WLAN.</string>
+    <string name="accessibility_wifi_one_bar">Réception WLAN une barre.</string>
+    <string name="accessibility_wifi_two_bars">Réception WLAN deux barres.</string>
+    <string name="accessibility_wifi_three_bars">Réception WLAN trois barres.</string>
+    <string name="accessibility_wifi_signal_full">Réception WLAN complète.</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">Connexion WLAN</string>
+</resources>

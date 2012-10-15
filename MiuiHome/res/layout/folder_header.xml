@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:id="@id/folder_header" android:background="@drawable/folder_title_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="21.0sp" android:textColor="@color/folder_title_text" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/folder_title_text_shadow" android:shadowDy="-1.0" android:shadowRadius="1.0" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="21.0sp" android:textColor="@color/folder_setting_remane_text" android:layout_gravity="left|center" android:id="@id/rename_edit" android:background="@drawable/folder_setting_rename_bg" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:maxLength="30" android:capitalize="none" android:autoText="false" android:layout_weight="1.0" />
+        <Button android:layout_gravity="right|center" android:id="@id/confirm" android:background="@drawable/folder_setting_confirm_btn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/confirm_btn_label" />
+    </LinearLayout>
+</FrameLayout>

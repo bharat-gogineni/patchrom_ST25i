@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="config_cdmaDbmThresholds">
+        <item>-75</item>
+        <item>-85</item>
+        <item>-95</item>
+        <item>-100</item>
+    </integer-array>
+    <integer-array name="config_cdmaEcioThresholds">
+        <item>-90</item>
+        <item>-110</item>
+        <item>-130</item>
+        <item>-150</item>
+    </integer-array>
+    <integer-array name="config_evdoDbmThresholds">
+        <item>-65</item>
+        <item>-75</item>
+        <item>-90</item>
+        <item>-105</item>
+    </integer-array>
+    <integer-array name="config_evdoSnrThresholds">
+        <item>7</item>
+        <item>5</item>
+        <item>3</item>
+        <item>1</item>
+    </integer-array>
+    <array name="shutdown_reboot_options">
+        <item>@string/reboot</item>
+    </array>
+    <string-array name="shutdown_reboot_actions">
+        <item>now</item>
+    </string-array>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_edit" android:id="@id/action_toggle_subject" android:title="@string/add_subject" />
+    <item android:id="@id/action_edit_mode" android:title="@string/edit" />
+    <item android:icon="@*android:drawable/ic_menu_close_clear_cancel" android:id="@id/action_discard" android:title="@string/discard" />
+    <item android:icon="@*android:drawable/ic_menu_preferences" android:id="@id/action_settings" android:title="@string/menu_preferences" />
+</menu>

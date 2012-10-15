@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">Ingen WLAN-signal.</string>
+    <string name="accessibility_wifi_one_bar">WLAN: en stapel.</string>
+    <string name="accessibility_wifi_two_bars">WLAN: två staplar.</string>
+    <string name="accessibility_wifi_three_bars">WLAN: tre staplar.</string>
+    <string name="accessibility_wifi_signal_full">WLAN-signalen är full.</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">WLAN-ansluten</string>
+</resources>

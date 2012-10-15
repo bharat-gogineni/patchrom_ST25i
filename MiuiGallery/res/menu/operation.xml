@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_trash" android:id="@id/action_delete" android:visible="false" android:title="@string/delete" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_share" android:id="@id/action_share" android:visible="false" android:title="@string/share" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_info_details" android:id="@id/action_details" android:visible="false" android:title="@string/details" android:showAsAction="ifRoom" />
+    <item android:id="@id/action_rename" android:visible="false" android:title="@string/operation_rename" android:showAsAction="never" />
+    <item android:id="@id/action_setas" android:visible="false" android:title="@string/set_image" android:showAsAction="never" />
+    <item android:id="@id/action_set_recent" android:visible="false" android:title="@string/set_recent_album" android:showAsAction="never" />
+    <item android:id="@id/action_remove_recent" android:visible="false" android:title="@string/remove_recent_album" android:showAsAction="never" />
+    <item android:id="@id/action_set_hidden" android:visible="false" android:title="@string/set_hidden_album" android:showAsAction="never" />
+    <item android:id="@id/action_remove_hidden" android:visible="false" android:title="@string/remove_hidden_album" android:showAsAction="never" />
+</menu>

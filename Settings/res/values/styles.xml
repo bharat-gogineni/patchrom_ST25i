@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="info_label">
+        <item name="android:textAppearance">@style/TextAppearance.info_label</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="info_value">
+        <item name="android:textAppearance">@style/TextAppearance.info_value</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="info_small">
+        <item name="android:textAppearance">@style/TextAppearance.info_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="info_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="entry_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="form_value">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance" parent="@android:style/TextAppearance" />
+    <style name="TextAppearance.info_label" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.info_small" parent="@style/TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.info_value" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TallTitleBarTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.CreateShortCut" parent="@miui:style/Theme.Light" />
+    <style name="wifi_item">
+        <item name="android:gravity">left</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+    <style name="wifi_item_label">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+    </style>
+    <style name="wifi_item_content">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+    </style>
+    <style name="wifi_section">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="setup_wizard_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Transparent" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="CryptKeeperBlankTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:background">#ff000000</item>
+    </style>
+    <style name="SecurityPreferenceButtonContainer" parent="@android:style/Holo.Light.SegmentedButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">2.0</item>
+        <item name="android:dividerPadding">8.0dip</item>
+    </style>
+    <style name="SecurityPreferenceButton" parent="@android:style/Widget.Holo.Light.Button">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="vpn_label">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="vpn_value">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="InputMethodPreferenceStyle">
+        <item name="android:layout">@layout/preference_inputmethod</item>
+        <item name="android:widgetLayout">@layout/preference_inputmethod_widget</item>
+    </style>
+    <style name="AccessibilityTutorialButton">
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5.0dip</item>
+        <item name="android:drawablePadding">3.0dip</item>
+    </style>
+    <style name="AccessibilityTutorialDivider">
+        <item name="android:gravity">fill_horizontal</item>
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0dip</item>
+    </style>
+    <style name="AccessibilityTutorialTitle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    <style name="AccessibilityTutorialBodyTextPrimary" parent="@android:style/TextAppearance.Small" />
+    <style name="AccessibilityTutorialIcon">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">96.0dip</item>
+        <item name="android:layout_height">96.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#b0000000</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="Theme.WifiDialog" parent="@miui:style/Theme.Holo.Light.Dialog.Alert">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+    <style name="Theme.AccessibilityTutorialActivity" parent="@android:style/Theme.Holo.Light" />
+    <style name="Miui" />
+    <style name="Miui.InformationTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Miui.InformationItemTitleStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+    </style>
+    <style name="Miui.Theme.Light.DialogWhenLarge" parent="@android:style/Theme.Holo.Light.DialogWhenLarge">
+        <item name="android:actionBarStyle">@miui:style/Widget.Holo.Light.ActionBar.Solid.HomeUp</item>
+        <item name="android:homeAsUpIndicator">@miui:drawable/ab_home_up</item>
+    </style>
+    <style name="Miui.Acitonbar.About.Device" parent="@miui:style/Widget.Holo.Light.ActionBar.Solid.HomeUp">
+        <item name="android:background">@drawable/about_device_ab_solid</item>
+        <item name="android:titleTextStyle">@style/Miui.ActionBar.Title.About.Device</item>
+    </style>
+    <style name="Miui.ActionBar.Title.About.Device" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Miui.Theme.Light.About.Device" parent="@miui:style/Theme.Light">
+        <item name="android:actionBarStyle">@style/Miui.Acitonbar.About.Device</item>
+        <item name="android:homeAsUpIndicator">@drawable/about_device_home_up</item>
+    </style>
+    <style name="Theme.Light.NoTitle" parent="@miui:style/Theme.Light">
+        <item name="android:actionBarStyle">@style/ActionBar.NoTitle</item>
+    </style>
+    <style name="ActionBar.NoTitle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:displayOptions"></item>
+    </style>
+    <style name="SecurityLockPatternView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="miui:diameterFactor">0.2</item>
+        <item name="miui:btnDefaultBmp">@drawable/lock_pattern_code_lock_default_holo</item>
+        <item name="miui:btnDefaultBackgroundBmp">@drawable/lock_pattern_code_lock_background</item>
+        <item name="miui:btnTouchedBmp">@drawable/lock_pattern_code_lock_touched_holo</item>
+        <item name="miui:circleDefaultBmp">@drawable/lock_pattern_indicator_code_lock_point_area_default_holo</item>
+        <item name="miui:circleGreenBmp">@drawable/lock_pattern_indicator_code_lock_point_area_green_holo</item>
+        <item name="miui:circleRedBmp">@drawable/lock_pattern_indicator_code_lock_point_area_red_holo</item>
+        <item name="miui:arrowGreenUpBmp">@drawable/lock_pattern_indicator_code_lock_drag_direction_green_up</item>
+        <item name="miui:arrowRedUpBmp">@drawable/lock_pattern_indicator_code_lock_drag_direction_red_up</item>
+        <item name="miui:pathStrokeAlpha">64</item>
+    </style>
+    <style name="ActionBar.Show.Title" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="Theme.Light.Show.Title" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBar.Show.Title</item>
+    </style>
+</resources>

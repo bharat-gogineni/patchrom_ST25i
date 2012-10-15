@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/title_bar" android:paddingRight="@dimen/spacing_to_border" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/error_msg" style="@style/ErrorMsgTitle" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/normal_state" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/image_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:shrinkColumns="0" android:layout_toLeftOf="@id/goto_nowplaying">
+            <TableRow>
+                <miui.widget.GradientTextView android:textSize="25.0sp" android:textStyle="bold" android:gravity="left|center" android:id="@id/primary_item" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" miui:startColor="@color/title_primary_gradual_start" miui:endColor="@color/title_primary_gradual_end" xmlns:miui="http://schemas.android.com/apk/res/miui" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/secondary_item" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_picker_item" android:scaleType="center" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/horizontal_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/goto_nowplaying">
+            <miui.widget.GradientTextView android:textSize="30.0sp" android:textStyle="bold" android:gravity="left" android:id="@id/primary_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/title_number_margin_top" android:singleLine="true" miui:startColor="@color/title_primary_gradual_start" miui:endColor="@color/title_primary_gradual_end" xmlns:miui="http://schemas.android.com/apk/res/miui" />
+            <TextView android:gravity="left|center" android:id="@id/secondary_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.666992dip" android:layout_marginTop="@dimen/title_text_margin_top" android:singleLine="true" style="@style/HorizontalTitleSecondaryText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/vertical_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/goto_nowplaying">
+            <TextView android:gravity="left|center" android:id="@id/primary_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TitlePrimaryText" />
+            <TextView android:gravity="left|center" android:id="@id/secondary_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TitleSecondaryText" />
+        </LinearLayout>
+        <ImageView android:gravity="center" android:layout_gravity="right|center" android:id="@id/goto_nowplaying" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_to_border" android:src="@drawable/goto_nowplaying_selector" android:scaleType="center" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

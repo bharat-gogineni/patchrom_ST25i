@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">WLANrik ez.</string>
+    <string name="accessibility_wifi_one_bar">WLAN sarearen barra bat.</string>
+    <string name="accessibility_wifi_two_bars">WLAN sarearen bi barra.</string>
+    <string name="accessibility_wifi_three_bars">WLAN sarearen hiru barra.</string>
+    <string name="accessibility_wifi_signal_full">WLAN sarearen seinale osoa.</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">WLAN konektatuta</string>
+</resources>

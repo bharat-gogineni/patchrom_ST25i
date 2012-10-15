@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/error_msg" android:paddingLeft="@dimen/spacing_to_border" style="@style/ErrorMsgTitle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

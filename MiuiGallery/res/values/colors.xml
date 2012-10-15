@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white_10_transparent">#20ffffff</color>
+    <color name="white_30_transparent">#55ffffff</color>
+    <color name="white_40_transparent">#66ffffff</color>
+    <color name="white_50_transparent">#80ffffff</color>
+    <color name="white_70_transparent">#b0ffffff</color>
+    <color name="black_30_transparent">#55000000</color>
+    <color name="black_50_transparent">#80000000</color>
+    <color name="black_70_transparent">#b0000000</color>
+    <item type="color" name="title_desc_text_color">@color/white_50_transparent</item>
+    <item type="color" name="title_primary_text_color">@*android:color/white</item>
+    <item type="color" name="title_secondary_text_color">@*android:color/white</item>
+    <item type="color" name="count_desc_info">@color/white_50_transparent</item>
+    <color name="shadowcolor">#ff333333</color>
+    <color name="gray">#ffa6a6a0</color>
+    <color name="drag_text_highlight">#ffff7e00</color>
+    <item type="color" name="drag_text_normal">@color/white_50_transparent</item>
+    <color name="no_recent_text">#d0ffffff</color>
+    <color name="title_primary_gradual_start">#fff7f7f7</color>
+    <color name="title_primary_gradual_end">#ffc7c7c7</color>
+    <color name="multi_choice_text">#b0000000</color>
+    <color name="multi_choice_text_shadow">#55ffffff</color>
+    <item type="color" name="item_primary_text">@*android:color/white</item>
+    <item type="color" name="item_secondary_text">@color/white_70_transparent</item>
+    <item type="color" name="initial_cloud_button_shadow_color">@color/black_30_transparent</item>
+    <color name="translucent_black">#67000000</color>
+    <color name="translucent_white">#99cccccc</color>
+    <color name="translucent_cyan">#99008aff</color>
+    <color name="opaque_cyan">#ff008aff</color>
+    <color name="color_picker_preset_color1">#ddff1e00</color>
+    <color name="color_picker_preset_color2">#ddff5b00</color>
+    <color name="color_picker_preset_color3">#ddff9900</color>
+    <color name="color_picker_preset_color4">#ddffd600</color>
+    <color name="color_picker_preset_color5">#ddeaff00</color>
+    <color name="color_picker_preset_color6">#ddadff00</color>
+    <color name="color_picker_preset_color7">#dd70ff00</color>
+    <color name="color_picker_preset_color8">#dd32ff00</color>
+    <color name="color_picker_preset_color9">#dd00ff0a</color>
+    <color name="color_picker_preset_color10">#dd00ff47</color>
+    <color name="color_picker_preset_color11">#dd00ff84</color>
+    <color name="color_picker_preset_color12">#dd00ffc1</color>
+    <color name="color_picker_preset_color13">#dd00ffff</color>
+    <color name="color_picker_preset_color14">#dd00c1ff</color>
+    <color name="color_picker_preset_color15">#dd0084ff</color>
+    <color name="color_picker_preset_color16">#dd0047ff</color>
+    <color name="color_picker_preset_color17">#dd000aff</color>
+    <color name="color_picker_preset_color18">#dd3300ff</color>
+    <color name="color_picker_preset_color19">#dd7000ff</color>
+    <color name="color_picker_preset_color20">#ddad00ff</color>
+    <color name="color_picker_preset_color21">#ddea00ff</color>
+    <color name="color_picker_preset_color22">#ddff00d6</color>
+    <color name="color_picker_preset_color23">#ddff0098</color>
+    <color name="color_picker_preset_color24">#ddff005b</color>
+    <color name="darker_transparent">#c1000000</color>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/EffectsContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.gallery.photoeditor.actions.CrossProcessAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_crossprocess" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/crossprocess" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.CrossProcessAction>
+    <com.miui.gallery.photoeditor.actions.PosterizeAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_posterize" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/posterize" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.PosterizeAction>
+    <com.miui.gallery.photoeditor.actions.LomoishAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_lomoish" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/lomoish" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.LomoishAction>
+    <com.miui.gallery.photoeditor.actions.DocumentaryAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_documentary" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/documentary" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.DocumentaryAction>
+    <com.miui.gallery.photoeditor.actions.VignetteAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_vignette" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/vignette" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.VignetteAction>
+    <com.miui.gallery.photoeditor.actions.GrainAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_grain" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/grain" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.GrainAction>
+    <com.miui.gallery.photoeditor.actions.FisheyeAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_fisheye" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/fisheye" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.FisheyeAction>
+</LinearLayout>

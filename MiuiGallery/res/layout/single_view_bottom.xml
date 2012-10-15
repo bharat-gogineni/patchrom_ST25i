@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/single_view_menu_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/single_view_delete" android:src="@drawable/single_view_delete_n" style="@style/SingleViewButton" />
+    <ImageView android:id="@id/single_view_edit" android:src="@drawable/single_view_edit_n" style="@style/SingleViewButton" />
+    <ImageView android:id="@id/single_view_bigscreen" android:visibility="gone" android:src="@drawable/bigscreen_push" style="@style/SingleViewButton" />
+    <ImageView android:id="@id/single_view_send" android:src="@drawable/single_view_send_n" style="@style/SingleViewButton" />
+    <ImageView android:id="@id/single_view_more" android:src="@drawable/single_view_more_n" style="@style/SingleViewButton" />
+</LinearLayout>

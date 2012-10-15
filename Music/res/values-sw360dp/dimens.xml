@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="volume_seek_bar_margin">23.0dip</dimen>
+    <dimen name="first_equalizer_seek_bar_margin">42.0dip</dimen>
+    <dimen name="equalizer_seek_bar_margin">11.0dip</dimen>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/privacy_protect_title" android:key="security_category">
+        <CheckBoxPreference android:persistent="false" android:title="@string/privacy_mode_enable_title" android:key="privacy_mode_enable" android:defaultValue="false" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/ac_enable_title" android:key="ac_enable" android:defaultValue="false" />
+        <PreferenceScreen android:persistent="false" android:title="@string/ac_set_apps_title" android:key="ac_set_apps" android:dependency="ac_enable">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.AccessControlSetApp" />
+        </PreferenceScreen>
+        <CheckBoxPreference android:persistent="false" android:title="@string/ac_privacy_mode_title" android:key="ac_privacy_mode" android:dependency="ac_enable" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lockpattern_settings_enable_visible_pattern_title" android:key="ac_visiblepattern" android:dependency="ac_enable" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/lockpattern_settings_enable_tactile_feedback_title" android:key="ac_unlock_tactile_feedback" android:dependency="ac_enable" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

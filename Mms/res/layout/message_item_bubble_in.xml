@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/message_item" android:background="@drawable/message_bubble_in_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/message_item_bubble_in_body" />
+            <View android:id="@id/mms_download_padding_view" android:background="@null" android:focusable="false" android:visibility="gone" android:clickable="false" android:longClickable="false" android:layout_width="@dimen/mms_download_padding_width" android:layout_height="1.0px" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right|center" android:id="@id/mms_download_controls" android:visibility="gone" android:layout_width="@dimen/mms_download_padding_width" android:layout_height="fill_parent">
+            <Button android:layout_gravity="center_vertical" android:id="@id/btn_download_msg" android:background="@drawable/download_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/label_downloading" android:background="@drawable/downloading_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="bottom|right|center" android:id="@id/favourite" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/favourite_bubble_in" />
+    </FrameLayout>
+</LinearLayout>

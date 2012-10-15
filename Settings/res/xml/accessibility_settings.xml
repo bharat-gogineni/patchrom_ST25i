@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/accessibility_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/accessibility_services_title" android:key="services_category" />
+    <PreferenceCategory android:title="@string/accessibility_system_title" android:key="system_category">
+        <CheckBoxPreference android:persistent="false" android:title="@string/accessibility_power_button_ends_call_title" android:key="toggle_power_button_ends_call_preference" android:order="2" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/accessibility_speak_password_title" android:key="toggle_speak_password_preference" android:order="4" />
+        <PreferenceScreen android:title="@string/accessibility_touch_exploration_title" android:key="toggle_touch_exploration_preference" android:order="5" android:fragment="com.android.settings.MiuiAccessibilitySettings$ToggleTouchExplorationFragment">
+            <extra android:name="title" android:value="@string/accessibility_touch_exploration_title" />
+            <extra android:name="summary" android:value="@string/accessibility_touch_exploration_summary" />
+            <extra android:name="enable_warning_title" android:value="@android:string/dialog_alert_title" />
+            <extra android:name="enable_warning_message" android:value="@string/accessibility_touch_exploration_warning" />
+            <extra android:name="settings_title" android:value="@string/accessibility_menu_item_tutorial" />
+            <extra android:name="settings_component_name" android:value="com.android.settings/com.android.settings.AccessibilityTutorialActivity" />
+        </PreferenceScreen>
+        <ListPreference android:persistent="false" android:entries="@array/long_press_timeout_selector_titles" android:title="@string/accessibility_long_press_timeout_title" android:key="select_long_press_timeout_preference" android:order="6" android:entryValues="@array/long_press_timeout_selector_values" />
+        <com.android.settings.AccessibilityEnableScriptInjectionPreference android:persistent="false" android:title="@string/accessibility_script_injection_title" android:key="toggle_script_injection_preference" android:order="7" android:dialogTitle="@string/accessibility_script_injection_security_warning_title" android:dialogMessage="@string/accessibility_script_injection_security_warning_summary" android:dialogIcon="@android:drawable/ic_dialog_alert" android:positiveButtonText="@string/accessibility_script_injection_button_allow" android:negativeButtonText="@string/accessibility_script_injection_button_disallow" />
+    </PreferenceCategory>
+</PreferenceScreen>

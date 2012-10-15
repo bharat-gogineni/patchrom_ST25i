@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.329987sp" android:textColor="@*android:color/white" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PlaylistItemTextStyle" />
+    <TextView android:textSize="13.329987sp" android:textColor="@color/white_50_transparent" android:gravity="center" android:id="@id/count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</merge>

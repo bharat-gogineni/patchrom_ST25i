@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="message_content_panel_min_height">42.0px</dimen>
+    <dimen name="attachment_screen_height_2_rows">387.0px</dimen>
+    <dimen name="attachment_row_height_2_rows">177.0px</dimen>
+    <dimen name="attachment_screen_height_1_row">210.0px</dimen>
+    <dimen name="attachment_row_height_1_row">180.0px</dimen>
+    <dimen name="smiley_screen_height_3_rows">316.0px</dimen>
+    <dimen name="smiley_row_height_3_rows">96.0px</dimen>
+    <dimen name="smiley_screen_height_1_row">141.0px</dimen>
+    <dimen name="smiley_row_height_1_row">111.0px</dimen>
+</resources>

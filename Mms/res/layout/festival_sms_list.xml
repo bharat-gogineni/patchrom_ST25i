@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/message_list_top_splitter" android:layout_width="fill_parent" android:layout_height="0.6600001dip" />
+    <ListView android:id="@*android:id/list" android:background="@drawable/conversation_list_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="@null" android:divider="@null" android:layout_weight="1.0" android:fastScrollEnabled="true" />
+    <include layout="@layout/festival_sms_downloading_view" />
+</LinearLayout>

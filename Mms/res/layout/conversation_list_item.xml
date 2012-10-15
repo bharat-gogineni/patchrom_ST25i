@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.ConversationListItem android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/conversation_list_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/conversation_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.widget.QuickContactBadge android:id="@id/avatar" android:visibility="gone" android:layout_width="@dimen/avatar_size_large" android:layout_height="@dimen/avatar_size_large" />
+    <TextView android:textAppearance="@style/TextAppearance.ConversationListItem.Primary" android:textColor="@color/fetion_prefix_text_color" android:id="@id/fetion_prefix" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fetion_prefix" />
+    <TextView android:textAppearance="@style/TextAppearance.ConversationListItem.Primary" android:ellipsize="end" android:id="@id/from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textAppearance="@style/TextAppearance.ConversationListItem.Primary" android:textSize="@dimen/text_font_size_large" android:gravity="center" android:id="@id/msg_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="@dimen/conversation_unread_text_font_size" android:textColor="@color/conversation_unread_text_color" android:gravity="center" android:id="@id/unread_msg_count" android:background="@drawable/sms_unread_count_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textAppearance="@style/TextAppearance.ConversationListItem.Secondary" android:ellipsize="end" android:id="@id/subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textAppearance="@style/TextAppearance.ConversationListItem.Secondary" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <ImageView android:id="@id/attachment_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/conversation_attachment_indicator" />
+    <ImageView android:id="@id/timed_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/conversation_timed_indicator" />
+    <ImageView android:id="@id/draft_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/conversation_draft_indicator" />
+    <ImageView android:id="@id/error_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/conversation_error_indicator" />
+    <CheckBox android:id="@*android:id/checkbox" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.android.mms.ui.ConversationListItem>

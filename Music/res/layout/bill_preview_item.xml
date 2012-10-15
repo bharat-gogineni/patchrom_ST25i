@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/online_song_item_preview" android:layout_width="fill_parent" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/preview_item_num_text" android:textStyle="bold" android:textColor="@color/preview_item_number_text" android:gravity="center" android:id="@id/track_number" android:background="@drawable/category_num_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_picker_item" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/preview_item_title_text" android:textColor="@color/preview_item_title_text" android:gravity="center_vertical" android:id="@id/track_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/preview_item_descript_text" android:textColor="@color/preview_item_descript_text" android:gravity="center_vertical" android:id="@id/artist_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:singleLine="true" />
+</LinearLayout>

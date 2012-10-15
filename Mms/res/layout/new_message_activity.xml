@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.SizeAwareLinearLayout android:orientation="vertical" android:background="@drawable/message_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/contact_panel" android:background="@drawable/title_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/home" android:background="@drawable/home_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:background="@drawable/recipients_editor_bg" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:addStatesFromChildren="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/TextAppearance.RecipientEditor.Secondary" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/recipients_viewer_head" android:background="@drawable/recipient_editor_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/to_label" />
+            <ScrollView android:layout_gravity="center_vertical" android:id="@id/recipient_rows_scroller" android:fadingEdge="none" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+                <com.android.mms.ui.RowLayout android:id="@id/recipient_rows" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" mms:horizontalSpacing="2.0dip"
+                  xmlns:mms="http://schemas.android.com/apk/res/com.android.mms">
+                    <EditText android:textAppearance="@style/TextAppearance.RecipientEditor.Primary" android:gravity="center_vertical" android:id="@id/recipients_editor" android:background="@drawable/recipient_editor_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="40.0dip" android:maxLines="4" />
+                </com.android.mms.ui.RowLayout>
+            </ScrollView>
+            <LinearLayout android:layout_gravity="center_vertical" android:id="@id/recipients_viewer_linear" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextAppearance.RecipientEditor.Primary" android:gravity="center_vertical" android:id="@id/recipients_viewer" android:background="@drawable/recipient_editor_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textAppearance="@style/TextAppearance.RecipientEditor.Secondary" android:gravity="center_vertical" android:id="@id/recipients_viewer_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/add_recipient_panel" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/add_recipient" android:background="@drawable/add_recipients_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:id="@id/confirm_recipient" android:background="@drawable/confirm_recipient_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/counter_font_size" android:textColor="@color/counter_text_color" android:id="@id/recipient_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-3.0dip" android:layout_marginTop="-5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/history" android:background="@drawable/conversation_list_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/suggestion_list" android:background="@drawable/recipient_suggestion_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:divider="@null" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/recent_contact_list" android:background="@drawable/recent_contact_list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.android.mms.ui.StaticGridView android:id="@id/recent_contact_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/message_edit_bottom_panel" />
+    <include layout="@layout/message_edit_attachment_panel" />
+</com.android.mms.ui.SizeAwareLinearLayout>

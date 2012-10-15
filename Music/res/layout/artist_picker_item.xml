@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PickerItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/spacing_picker_item" android:layout_weight="1.0">
+        <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ItemPrimaryText" />
+        <TextView android:id="@id/details" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ItemSecondaryText" />
+    </LinearLayout>
+    <ImageView android:id="@id/play_indicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" />
+    <CheckBox android:id="@id/batch_selection_check" style="@style/BatchSelectionCheckBoxStyle" />
+</LinearLayout>

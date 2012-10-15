@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:colorBackground="@null" android:orientation="vertical" android:id="@id/page_layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:colorBackgroundCacheHint="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="@dimen/albumset_page_bar_height" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/albumset_page_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/initial_cloud_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="top|center" android:id="@id/initial_cloud_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/initial_cloud_image" />
+        <TextView android:id="@id/initial_cloud_text" android:text="@string/account_not_login" style="@style/CloudInitialText" />
+        <TextView android:id="@id/initial_cloud_button" android:text="@string/open_sync" style="@style/CloudInitialButton" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/cloud_none_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/cloud_none_text" android:layout_height="@dimen/cloud_none_text_height" android:text="@string/cloud_gallery_no_pictures" style="@style/CloudInitialText" />
+        <TextView android:textColor="@color/white_50_transparent" android:id="@id/cloud_none_message_text" android:text="@string/alert_message_initial_cloud" style="@style/CloudInitialText" />
+        <TextView android:id="@id/modify_cloud_setting_button" android:visibility="gone" android:text="@string/modify_cloud_settings" style="@style/CloudInitialButton" />
+    </LinearLayout>
+</LinearLayout>

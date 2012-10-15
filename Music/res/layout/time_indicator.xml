@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-8.0dip">
+        <TextView android:gravity="left" android:layout_gravity="bottom|left|center" android:id="@id/currenttime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/IndicatorTextStyle" />
+        <TextView android:gravity="right" android:layout_gravity="bottom|right|center" android:id="@id/totaltime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/IndicatorTextStyle" />
+    </LinearLayout>
+    <view android:gravity="center_vertical" android:id="@*android:id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-18.0dip" android:layout_marginRight="-18.0dip" android:progressDrawable="@drawable/time_indicator_progress_drawable" android:thumb="@drawable/time_indicator_thumb_selector" android:thumbOffset="8.669983dip" class="com.miui.player.ui.view.NinePatchSeekBar" />
+</merge>

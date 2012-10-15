@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@drawable/photo_frame_picker_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/list_header" android:background="@drawable/titlebar_tall_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@*android:style/TextAppearance.WindowTitle" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/main_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/photo_adjust" />
+        <ImageView android:layout_gravity="right|center" android:id="@id/header_action" android:background="@miui:drawable/btn_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rturn_icon_normal" />
+    </FrameLayout>
+    <miui.widget.PhotoFrameView android:id="@id/edit_image" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:background="@drawable/bottombar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/select_image" android:background="@drawable/bottom_btn_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/select_photo" android:layout_weight="1.0" style="@style/MultiSelectActionButton" />
+        <Button android:id="@id/select_frame" android:background="@drawable/bottom_btn_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/select_frame" android:layout_weight="1.0" style="@style/MultiSelectActionButton" />
+        <Button android:id="@id/confirm" android:background="@drawable/bottom_btn_commit_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/photo_confirm" android:layout_weight="1.0" style="@style/MultiSelectActionButton" />
+    </LinearLayout>
+</LinearLayout>

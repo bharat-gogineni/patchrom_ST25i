@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/manageConferencePanel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Chronometer android:textAppearance="@style/Miui.TextAppearance.Primary" android:gravity="center_horizontal" android:id="@id/manageConferencePanelHeader" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <ListView android:scrollbarStyle="outsideOverlay" android:layout_gravity="center" android:id="@id/conferenceList" android:background="@drawable/incall_manage_conference_bg_miui" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@null" android:layout_weight="1.0" style="@style/Miui.List" />
+        <LinearLayout android:gravity="center" android:background="@drawable/incall_manage_conference_bottom_bar_bg_miui" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:gravity="center" android:id="@id/manage_done" android:background="@drawable/incall_button_white_miui" android:layout_width="250.0dip" android:layout_height="wrap_content" android:text="@string/caller_manage_manage_done_text_miui" style="@style/Miui.TextAppearance.Button" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

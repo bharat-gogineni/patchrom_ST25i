@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:background="@drawable/item_bg" android:padding="@dimen/spacing_picker_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:shrinkColumns="0" style="@style/PlaylistItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:gravity="center_vertical">
+        <include layout="@layout/playlist_picker_item_text" />
+    </TableRow>
+</TableLayout>

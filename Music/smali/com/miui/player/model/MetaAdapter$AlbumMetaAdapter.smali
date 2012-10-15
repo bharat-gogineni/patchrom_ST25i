@@ -1,0 +1,215 @@
+.class public Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;
+.super Lcom/miui/player/model/MetaAdapter;
+.source "MetaAdapter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/miui/player/model/MetaAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "AlbumMetaAdapter"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/miui/player/model/MetaAdapter",
+        "<",
+        "Lcom/miui/player/plugin/onlinemusic2/Album;",
+        "Lcom/miui/player/plugin/onlinemusic2/AlbumList;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static sAlbumListCache:Lcom/miui/player/plugin/onlinemusic2/AlbumList;
+
+
+# instance fields
+.field private final mDefaultAlbum:Landroid/graphics/drawable/Drawable;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 141
+    const/4 v0, 0x0
+
+    sput-object v0, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->sAlbumListCache:Lcom/miui/player/plugin/onlinemusic2/AlbumList;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;I)V
+    .locals 2
+    .parameter "context"
+    .parameter "displayCount"
+
+    .prologue
+    .line 145
+    invoke-direct {p0, p1, p2}, Lcom/miui/player/model/MetaAdapter;-><init>(Landroid/content/Context;I)V
+
+    .line 146
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f020008
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->mDefaultAlbum:Landroid/graphics/drawable/Drawable;
+
+    .line 147
+    sget-object v0, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->sAlbumListCache:Lcom/miui/player/plugin/onlinemusic2/AlbumList;
+
+    if-eqz v0, :cond_0
+
+    .line 148
+    sget-object v0, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->sAlbumListCache:Lcom/miui/player/plugin/onlinemusic2/AlbumList;
+
+    invoke-virtual {p0, v0}, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->updateData(Lcom/miui/player/plugin/onlinemusic2/MetaList;)Z
+
+    .line 150
+    :cond_0
+    return-void
+.end method
+
+
+# virtual methods
+.method protected bindView(Landroid/view/View;Lcom/miui/player/plugin/onlinemusic2/Album;)V
+    .locals 6
+    .parameter "v"
+    .parameter "al"
+
+    .prologue
+    .line 154
+    invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/miui/player/model/MetaAdapter$ViewHolder;
+
+    .line 155
+    .local v0, vh:Lcom/miui/player/model/MetaAdapter$ViewHolder;
+    iget-object v1, v0, Lcom/miui/player/model/MetaAdapter$ViewHolder;->mImageViewIndicator:Landroid/widget/ImageView;
+
+    const/16 v2, 0x8
+
+    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 156
+    iget-object v1, v0, Lcom/miui/player/model/MetaAdapter$ViewHolder;->mTextViewPrimary:Landroid/widget/TextView;
+
+    iget-object v2, p2, Lcom/miui/player/plugin/onlinemusic2/Album;->mOutline:Lcom/miui/player/plugin/onlinemusic2/Album$AlbumOutline;
+
+    iget-object v2, v2, Lcom/miui/player/plugin/onlinemusic2/Album$AlbumOutline;->mTitle:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 157
+    iget-object v1, v0, Lcom/miui/player/model/MetaAdapter$ViewHolder;->mTextViewSecondary:Landroid/widget/TextView;
+
+    iget-object v2, p2, Lcom/miui/player/plugin/onlinemusic2/Album;->mOutline:Lcom/miui/player/plugin/onlinemusic2/Album$AlbumOutline;
+
+    iget-object v2, v2, Lcom/miui/player/plugin/onlinemusic2/Album$AlbumOutline;->mArtistName:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 158
+    sget-object v1, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->sRequestManager:Lmiui/cache/RequestManager;
+
+    invoke-virtual {v1}, Lmiui/cache/RequestManager;->isStarted()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 159
+    sget-object v1, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->sRequestManager:Lmiui/cache/RequestManager;
+
+    new-instance v2, Lcom/miui/player/model/MetaAdapter$ImageRequest;
+
+    iget-object v3, p2, Lcom/miui/player/plugin/onlinemusic2/Album;->mOutline:Lcom/miui/player/plugin/onlinemusic2/Album$AlbumOutline;
+
+    iget-object v3, v3, Lcom/miui/player/plugin/onlinemusic2/Album$AlbumOutline;->mURLPictureBig:Ljava/lang/String;
+
+    iget-object v4, v0, Lcom/miui/player/model/MetaAdapter$ViewHolder;->mImageViewAlbum:Landroid/widget/ImageView;
+
+    iget-object v5, p0, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->mDefaultAlbum:Landroid/graphics/drawable/Drawable;
+
+    invoke-direct {v2, v3, v4, v5}, Lcom/miui/player/model/MetaAdapter$ImageRequest;-><init>(Ljava/lang/String;Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;)V
+
+    invoke-virtual {v1, v2}, Lmiui/cache/RequestManager;->request(Lmiui/cache/RequestManager$Request;)Z
+
+    .line 161
+    :cond_0
+    return-void
+.end method
+
+.method protected bridge synthetic bindView(Landroid/view/View;Ljava/lang/Object;)V
+    .locals 0
+    .parameter "x0"
+    .parameter "x1"
+
+    .prologue
+    .line 140
+    check-cast p2, Lcom/miui/player/plugin/onlinemusic2/Album;
+
+    .end local p2
+    invoke-virtual {p0, p1, p2}, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->bindView(Landroid/view/View;Lcom/miui/player/plugin/onlinemusic2/Album;)V
+
+    return-void
+.end method
+
+.method protected onDataChanged()V
+    .locals 1
+
+    .prologue
+    .line 165
+    iget-object v0, p0, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->mData:Lcom/miui/player/plugin/onlinemusic2/MetaList;
+
+    if-eqz v0, :cond_0
+
+    .line 166
+    iget-object v0, p0, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->mData:Lcom/miui/player/plugin/onlinemusic2/MetaList;
+
+    check-cast v0, Lcom/miui/player/plugin/onlinemusic2/AlbumList;
+
+    sput-object v0, Lcom/miui/player/model/MetaAdapter$AlbumMetaAdapter;->sAlbumListCache:Lcom/miui/player/plugin/onlinemusic2/AlbumList;
+
+    .line 168
+    :cond_0
+    return-void
+.end method
+
+.method protected onNewView(Landroid/view/View;)V
+    .locals 3
+    .parameter "v"
+
+    .prologue
+    .line 172
+    invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/miui/player/model/MetaAdapter$ViewHolder;
+
+    .line 173
+    .local v0, vh:Lcom/miui/player/model/MetaAdapter$ViewHolder;
+    iget-object v1, v0, Lcom/miui/player/model/MetaAdapter$ViewHolder;->mImageViewMask:Landroid/widget/ImageView;
+
+    const v2, 0x7f02000d
+
+    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
+
+    .line 174
+    return-void
+.end method

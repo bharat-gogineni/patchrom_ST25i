@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:id="@id/bottom_panel" android:background="@drawable/message_edit_bottom_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/sms_button_show_attachment_panel" android:background="@drawable/insert_attachment_button_n" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/editor_container" android:addStatesFromChildren="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ScrollView android:id="@id/editor_scroller" android:scrollbars="none" android:fadingEdge="none" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/message_content_panel" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/timed_message_indicator" android:background="@drawable/timing_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <EditText android:textAppearance="@style/TextAppearance.MmsEditor" android:id="@id/subject" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/subject_hint" android:maxLength="40" android:capitalize="sentences" android:autoText="true" />
+                    <View android:id="@id/subject_divider" android:background="@*android:drawable/divider_horizontal_textfield" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="4.0dip" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.android.mms.ui.AttachmentView android:id="@id/attachment_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip">
+                            <ImageView android:id="@id/attachment_image" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <ImageView android:layout_gravity="center" android:id="@id/attachment_play_icon" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*android:drawable/ic_media_play" />
+                        </com.android.mms.ui.AttachmentView>
+                        <View android:id="@id/text_focuser" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <com.android.mms.ui.MmsTextEditor android:textAppearance="@style/TextAppearance.MmsEditor" android:id="@id/embedded_text_editor" android:background="@null" android:nextFocusRight="@id/send_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="2000" android:capitalize="sentences" android:autoText="true" android:imeOptions="actionSend|flagNoEnterAction" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/counter_font_size" android:textColor="@color/counter_text_color" android:layout_gravity="center" android:id="@id/text_counter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@id/send_button" android:background="@drawable/send_btn" android:nextFocusLeft="@id/embedded_text_editor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

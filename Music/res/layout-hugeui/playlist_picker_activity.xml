@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MusicActivityStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/main_list_frame" android:paddingBottom="@dimen/spacing_to_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/sd_error" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/playlist_custom" style="@style/PlaylistGroupTitleStyle" />
+        <view android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.miui.player.ui.view.FixedListView" style="@style/PickerGridView" />
+        <View android:background="@drawable/picker_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_to_border" android:layout_marginRight="@dimen/spacing_to_border" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/playlist_system" style="@style/PlaylistGroupTitleStyle" />
+        <view android:id="@id/system_list" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.miui.player.ui.view.FixedListView" style="@style/PickerGridView" />
+        <View android:background="@drawable/picker_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_to_border" android:layout_marginRight="@dimen/spacing_to_border" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.gallery.bigscreen.DeviceItem android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bigscreen_device_item_horonzital_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/device_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bigscreen_device_item_margin_top" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@*android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/device_title" android:layout_width="@dimen/bigscreen_device_item_text_max_width" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerHorizontal="true" />
+</com.miui.gallery.bigscreen.DeviceItem>

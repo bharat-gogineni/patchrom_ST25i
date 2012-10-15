@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/dial_pad_touch_tone_setting_miui"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <CheckBoxPreference android:persistent="false" android:title="@string/dial_pad_touch_tone_miui" android:key="button_dial_pad_touch_tone_key" android:defaultValue="true" />
+    <ListPreference android:persistent="false" android:entries="@array/dial_pad_touch_tone_entries_miui" android:title="@string/tone_miui" android:key="button_tone_key" android:dependency="button_dial_pad_touch_tone_key" android:defaultValue="-1" android:dialogTitle="@string/tone_miui" android:entryValues="@array/dial_pad_touch_tone_entry_values_miui" />
+</PreferenceScreen>

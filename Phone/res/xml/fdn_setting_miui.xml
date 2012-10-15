@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/fdn_miui" android:key="button_fdn_enable" android:summaryOn="@string/fdn_enabled_miui" android:summaryOff="@string/fdn_disabled_miui" />
+    <PreferenceScreen android:persistent="false" android:title="@string/change_pin2_miui" android:key="button_change_pin2" android:summary="@string/fdn_change_pin_sum_miui" />
+    <PreferenceScreen android:persistent="false" android:title="@string/manage_fdn_list_miui" android:key="button_fdn_list" android:summary="@string/manage_fdn_list_sum_miui">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.MiuiFdnList" />
+    </PreferenceScreen>
+</PreferenceScreen>

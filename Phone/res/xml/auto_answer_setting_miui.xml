@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/auto_answer_setting_title_miui"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <CheckBoxPreference android:title="@string/auto_answer_pref_title_miui" android:key="button_auto_answer" android:summary="@string/auto_answer_pref_summary_miui" android:defaultValue="false" />
+    <ListPreference android:entries="@array/auto_answer_delay_entries_miui" android:title="@string/auto_answer_delay_title_miui" android:key="button_auto_answer_delay" android:defaultValue="3" android:dialogTitle="@string/auto_answer_delay_title_miui" android:entryValues="@array/auto_answer_delay_entry_values_miui" />
+    <miui.preference.RadioButtonPreferenceCategory android:title="@string/auto_answer_scenario_title_miui" android:key="button_auto_answer_scenario" />
+</PreferenceScreen>

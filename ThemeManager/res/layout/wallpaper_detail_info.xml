@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@miui:string/description_author" style="@miui:style/ResourceBrowser.ResourceProperty.Title" />
+        <TextView android:id="@id/author" style="@miui:style/ResourceBrowser.ResourceProperty.Content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@miui:string/description_size" style="@miui:style/ResourceBrowser.ResourceProperty.Title" />
+        <TextView android:id="@id/size" style="@miui:style/ResourceBrowser.ResourceProperty.Content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/mark" android:text="@miui:string/description_uploadtime" style="@miui:style/ResourceBrowser.ResourceProperty.Title" />
+        <TextView android:id="@id/modifiedTime" style="@miui:style/ResourceBrowser.ResourceProperty.Content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@miui:string/description_download" style="@miui:style/ResourceBrowser.ResourceProperty.Title" />
+        <TextView android:id="@id/downloadCount" style="@miui:style/ResourceBrowser.ResourceProperty.Content" />
+    </LinearLayout>
+</LinearLayout>

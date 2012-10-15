@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/icon_message_text" android:gravity="center" android:layout_gravity="top|right|center" android:id="@id/icon_msg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" style="@style/WorkspaceIconTitle.notification"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

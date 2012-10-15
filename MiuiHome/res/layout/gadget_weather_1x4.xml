@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:focusable="true" android:clickable="true" android:layout_width="300.0dip" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_1x4_bg" android:focusable="true" android:clickable="true" android:layout_width="300.0dip" android:layout_height="100.0dip" android:src="@drawable/gadget_weather_a4_00" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="top|left|center" android:id="@id/widget_1x4_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="23.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#a0ffffff" android:layout_gravity="top|left|center" android:id="@id/widget_1x4_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="47.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="top|right|center" android:id="@id/widget_1x4_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_marginRight="14.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#a0ffffff" android:layout_gravity="top|right|center" android:id="@id/widget_1x4_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="47.0dip" android:layout_marginRight="14.0dip" android:text="@string/gadget_weather_loading" />
+    <ImageView android:layout_gravity="top|left|center" android:id="@id/widget_1x4_left_1" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" />
+    <ImageView android:layout_gravity="top|left|center" android:id="@id/widget_1x4_left_2" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="100.0dip" android:layout_marginTop="0.0dip" />
+    <ImageView android:layout_gravity="top|left|center" android:id="@id/widget_1x4_left_3" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="200.0dip" android:layout_marginTop="0.0dip" />
+</FrameLayout>

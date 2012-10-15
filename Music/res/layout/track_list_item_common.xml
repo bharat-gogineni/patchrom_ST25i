@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/batch_selection_check" android:visibility="gone" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BatchSelectionCheckBoxStyle" />
+    <TextView android:id="@id/download_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_picker_item" android:layout_toLeftOf="@id/batch_selection_check" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    <ImageView android:id="@id/favorite_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/indicator_favorite" android:scaleType="center" android:layout_toLeftOf="@id/download_status" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    <ImageView android:id="@id/play_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_toLeftOf="@id/favorite_indicator" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_picker_item" android:layout_toLeftOf="@id/play_indicator" android:layout_toRightOf="@id/adjust_button" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <TableLayout android:orientation="horizontal" android:id="@id/title_wrap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shrinkColumns="0">
+            <TableRow>
+                <TextView android:id="@id/line1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ItemPrimaryText" />
+                <TextView android:textSize="12.0sp" android:id="@id/online_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_picker_item" android:text="@string/online_indicator" android:singleLine="true" />
+            </TableRow>
+        </TableLayout>
+        <TextView android:ellipsize="end" android:id="@id/line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" style="@style/ItemSecondaryText" />
+    </LinearLayout>
+</merge>

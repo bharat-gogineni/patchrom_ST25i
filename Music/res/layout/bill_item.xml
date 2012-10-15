@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/preview_list_title_text" android:textColor="@color/preview_list_title_text" android:gravity="left|center" android:id="@id/billboard_name" android:background="@drawable/bill_item_bg_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <LinearLayout android:orientation="vertical" android:id="@id/preview_wrap" android:background="@drawable/bill_item_bg_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/song_item_preview_1" layout="@layout/bill_preview_item" />
+        <include android:id="@id/song_item_preview_2" layout="@layout/bill_preview_item" />
+        <include android:id="@id/song_item_preview_3" layout="@layout/bill_preview_item" />
+        <include android:id="@id/song_item_preview_4" layout="@layout/bill_preview_item" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="avatar_size_large">70.0dip</dimen>
+    <dimen name="avatar_size_small">53.0dip</dimen>
+    <dimen name="mms_attachment_padding_height">200.0dip</dimen>
+    <dimen name="recent_contact_height_2_rows">80.0dip</dimen>
+    <dimen name="recent_contact_height_1_rows">80.0dip</dimen>
+    <dimen name="conversation_list_item_height">98.0dip</dimen>
+</resources>

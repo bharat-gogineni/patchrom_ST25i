@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/EffectsContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.gallery.photoeditor.actions.CropAction android:tag="@string/crop_tooltip" style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_crop" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/crop" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.CropAction>
+    <com.miui.gallery.photoeditor.actions.RedEyeAction android:tag="@string/redeye_tooltip" style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_redeye" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/redeye" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.RedEyeAction>
+    <com.miui.gallery.photoeditor.actions.StraightenAction android:tag="@string/straighten_tooltip" style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_straighten" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/straighten" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.StraightenAction>
+    <com.miui.gallery.photoeditor.actions.RotateAction android:tag="@string/rotate_tooltip" style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_rotate" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/rotate" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.RotateAction>
+    <com.miui.gallery.photoeditor.actions.FlipAction android:tag="@string/flip_tooltip" style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_flip" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/flip" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.FlipAction>
+    <com.miui.gallery.photoeditor.actions.SharpenAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_sharpen" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/sharpen" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.SharpenAction>
+</LinearLayout>

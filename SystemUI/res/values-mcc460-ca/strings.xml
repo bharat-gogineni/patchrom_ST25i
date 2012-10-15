@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">Sense WLAN.</string>
+    <string name="accessibility_wifi_one_bar">Senyal WLAN: una barra.</string>
+    <string name="accessibility_wifi_two_bars">Senyal WLAN: dues barres.</string>
+    <string name="accessibility_wifi_three_bars">Senyal WLAN: tres barres.</string>
+    <string name="accessibility_wifi_signal_full">Senyal WLAN: complet.</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">WLAN: connectada</string>
+</resources>

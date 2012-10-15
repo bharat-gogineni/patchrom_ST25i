@@ -1,0 +1,9 @@
+version: 1.5.0.5a056e3
+apkFileName: framework-res.apk
+isFrameworkApk: true
+usesFramework:
+  ids:
+  - 2
+sdkInfo:
+  minSdkVersion: '15'
+  targetSdkVersion: '15'

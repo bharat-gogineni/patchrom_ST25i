@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/EffectsContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.gallery.photoeditor.actions.FillLightAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_filllight" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/filllight" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.FillLightAction>
+    <com.miui.gallery.photoeditor.actions.HighlightAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_highlight" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/highlight" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.HighlightAction>
+    <com.miui.gallery.photoeditor.actions.ShadowAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_shadow" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/shadow" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.ShadowAction>
+    <com.miui.gallery.photoeditor.actions.AutoFixAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_autofix" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/autofix" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.AutoFixAction>
+</LinearLayout>

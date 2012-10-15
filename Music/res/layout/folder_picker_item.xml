@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PickerItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:src="@drawable/folder_icon" style="@style/ItemPrimaryIcon" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/spacing_picker_item" android:layout_weight="1.0">
+        <TableLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shrinkColumns="0">
+            <TableRow>
+                <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ItemPrimaryText" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white_70_transparent" android:gravity="left|center" android:id="@id/num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_picker_item" android:singleLine="true" style="@style/ItemPrimaryText" />
+            </TableRow>
+        </TableLayout>
+        <TextView android:id="@id/details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/ItemSecondaryText" />
+    </LinearLayout>
+    <CheckBox android:id="@id/batch_selection_check" style="@style/BatchSelectionCheckBoxStyle" />
+</LinearLayout>

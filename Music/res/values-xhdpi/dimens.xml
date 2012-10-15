@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_to_border">15.0dip</dimen>
+    <dimen name="spacing_picker_item">7.5dip</dimen>
+    <dimen name="category_text_size">13.5sp</dimen>
+    <dimen name="category_num_size">12.0sp</dimen>
+    <dimen name="equalizer_seek_bar_height">373.0dip</dimen>
+    <dimen name="equalizer_seek_bar_padding_top">13.0dip</dimen>
+</resources>

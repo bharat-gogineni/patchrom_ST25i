@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_font_size_medium" android:textColor="@color/expander_group_text" android:gravity="center_vertical" android:id="@id/title" android:background="@miui:drawable/expander_group_header_bg" android:paddingLeft="?android:expandableListPreferredItemPaddingLeft" android:paddingTop="@dimen/list_item_padding_outer" android:paddingRight="@dimen/list_item_padding_outer" android:paddingBottom="@dimen/list_item_padding_outer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

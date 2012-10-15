@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.SizeAwareLinearLayout android:orientation="vertical" android:background="@drawable/message_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/contact_panel" android:background="@drawable/title_bar_tall_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <QuickContactBadge android:layout_gravity="center_vertical" android:id="@id/avatar" android:layout_width="@dimen/avatar_size_large" android:layout_height="@dimen/avatar_size_large" android:layout_marginLeft="13.299988dip" android:layout_marginRight="8.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_weight="1.0">
+            <com.android.mms.ui.ShrinkableLinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" mms:shrinkableIndex="1"
+              xmlns:mms="http://schemas.android.com/apk/res/com.android.mms">
+                <TextView android:textColor="@color/fetion_prefix_text_color" android:id="@id/fetion_prefix" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="@string/fetion_prefix" style="@style/TextAppearance.ConversationTitle.Primary" />
+                <miui.widget.MarqueeTextView android:id="@id/from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/TextAppearance.ConversationTitle.Primary" />
+                <TextView android:id="@id/message_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TextAppearance.ConversationTitle.Secondary" />
+            </com.android.mms.ui.ShrinkableLinearLayout>
+            <TextView android:id="@id/phone_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TextAppearance.ConversationTitle.Secondary" />
+        </LinearLayout>
+        <ImageView android:id="@id/call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_btn" />
+    </LinearLayout>
+    <include layout="@layout/message_list" />
+    <include layout="@layout/message_edit_bottom_panel" />
+    <include layout="@layout/message_edit_attachment_panel" />
+</com.android.mms.ui.SizeAwareLinearLayout>

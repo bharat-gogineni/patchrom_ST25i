@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">ليست هناك إشارة WLAN.</string>
+    <string name="accessibility_wifi_one_bar">إشارة WLAN تتكون من شريط واحد.</string>
+    <string name="accessibility_wifi_two_bars">إشارة WLAN تتكون من شريطين.</string>
+    <string name="accessibility_wifi_three_bars">إشارة WLAN تتكون من ثلاثة أشرطة.</string>
+    <string name="accessibility_wifi_signal_full">إشارة WLAN كاملة.</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">WLAN متصلة</string>
+</resources>

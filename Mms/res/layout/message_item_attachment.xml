@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/attachment_pic" android:background="@drawable/message_attachment_pic" android:visibility="gone" android:layout_width="@dimen/mms_attachment_pic_width" android:layout_height="@dimen/mms_attachment_pic_height" />
+    <ImageView android:layout_gravity="top" android:id="@id/attachment_card" android:background="@drawable/message_attachment_card" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="top" android:id="@id/attachment_audio" android:background="@drawable/message_attachment_audio" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="top" android:id="@id/attachment_video" android:background="@drawable/message_attachment_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="top" android:id="@id/attachment_default" android:background="@drawable/message_attachment_default" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

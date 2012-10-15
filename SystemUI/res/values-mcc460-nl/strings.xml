@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">Geen WLAN.</string>
+    <string name="accessibility_wifi_one_bar">WLAN: één streepje.</string>
+    <string name="accessibility_wifi_two_bars">WLAN: twee streepjes.</string>
+    <string name="accessibility_wifi_three_bars">WLAN: drie streepjes.</string>
+    <string name="accessibility_wifi_signal_full">WLAN-signaal is op volledige sterkte.</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">Verbonden via WLAN</string>
+</resources>

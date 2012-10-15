@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/music_pick_item" android:background="@drawable/item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:gravity="center_vertical" android:id="@id/track_check_box" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-8.0dip" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BatchSelectionCheckBoxStyle" />
+    <TextView android:textSize="16.0sp" android:gravity="left" android:id="@id/track_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxWidth="250.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/ItemPrimaryText" />
+    <TextView android:ellipsize="end" android:gravity="left" android:id="@id/artist_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250.0dip" android:layout_below="@id/track_name" android:layout_alignLeft="@id/track_name" style="@style/ItemSecondaryText" />
+</RelativeLayout>

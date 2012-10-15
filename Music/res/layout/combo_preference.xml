@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@miui:dimen/android_preference_item_padding_side" android:paddingTop="12.0dip" android:paddingRight="?android:scrollbarSize" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <RelativeLayout android:id="@id/sliding_button_parent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/widget_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@miui:dimen/android_preference_item_padding_inner" android:minWidth="@miui:dimen/android_preference_widget_width" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <miui.widget.SlidingButton android:id="@id/sliding_button" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/widget_frame" android:layout_alignParentLeft="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:id="@id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_album_summary" android:maxLines="4" android:layout_toLeftOf="@id/widget_frame" android:layout_below="@id/title" android:layout_alignLeft="@id/title" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/current_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/current_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/current" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/seek_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="left|center" android:id="@id/min" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <SeekBar android:id="@id/seekbar" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="right|center" android:id="@id/max" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/voicemail_settings_miui"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <ListPreference android:title="@string/voicemail_provider_miui" android:key="button_voicemail_provider" android:summary="@string/voicemail_provider_sum_miui" android:defaultValue="" />
+    <PreferenceScreen android:persistent="false" android:title="@string/voicemail_settings_miui" android:key="button_voicemail_setting">
+        <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:hint="@string/voicemail_settings_number_hint_miui" android:singleLine="true" android:autoText="false" android:title="@string/voicemail_settings_number_title_miui" android:key="button_voicemail" android:dialogTitle="@string/voicemail_miui" phone:confirmMode="confirm" />
+    </PreferenceScreen>
+    <ListPreference android:persistent="true" android:entries="@array/voicemail_notification_vibrate_when_entries" android:title="@string/voicemail_notification_vibrate_when_title" android:key="button_voicemail_notification_vibrate_when_key" android:defaultValue="@string/voicemail_notification_vibrate_when_default" android:dialogTitle="@string/voicemail_notification_vibarte_when_dialog_title" android:entryValues="@array/voicemail_notification_vibrate_when_values" />
+</PreferenceScreen>

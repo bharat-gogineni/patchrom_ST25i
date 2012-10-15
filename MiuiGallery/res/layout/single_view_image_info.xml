@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/single_view_menu_upper_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/single_view_back" android:src="@drawable/title_navigator" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/SingleViewBackButton" />
+    <ImageView android:id="@id/play_slideshow" android:src="@drawable/play_slideshow_n" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SingleViewSlideShowButton" />
+    <TextView android:textSize="13.0sp" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/image_order_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_toLeftOf="@id/play_slideshow" android:layout_centerVertical="true" />
+</RelativeLayout>

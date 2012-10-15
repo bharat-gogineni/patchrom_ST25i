@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/multi_recipient_title_info_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.ConversationTitle.Primary" android:id="@id/contact_info_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="150.0dip" android:singleLine="true" />
+    <TextView android:textAppearance="@style/TextAppearance.ConversationTitle.Primary" android:ellipsize="start" android:gravity="right" android:id="@id/contact_info_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PickerItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:shrinkColumns="0" android:layout_weight="1.0">
+        <TableRow>
+            <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ItemPrimaryText" />
+            <TextView android:id="@id/details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_picker_item" android:text="@string/channel_postfix" style="@style/ItemSecondaryText" />
+        </TableRow>
+    </TableLayout>
+    <ImageView android:id="@id/play_indicator" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" />
+</LinearLayout>

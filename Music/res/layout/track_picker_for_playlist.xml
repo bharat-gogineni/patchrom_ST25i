@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/music_picker" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MusicActivityStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/spacing_to_border" style="@style/SymPickerListView" />
+    <miui.widget.AlphabetFastIndexer android:id="@id/fast_indexer" style="@style/AlphaFastIndexerStyle" />
+</FrameLayout>

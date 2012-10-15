@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/search_bar_id" android:background="@drawable/search_input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_to_border" android:layout_marginTop="@dimen/spacing_picker_item" android:layout_marginRight="@dimen/spacing_to_border" android:layout_marginBottom="@dimen/spacing_picker_item">
+                <include layout="@layout/online_search_bar" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/content_wrap" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="@string/new_albums" style="@style/ItemGroupTitleStyle" />
+                <fragment android:gravity="top|left|center" android:id="@id/new_albums" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_to_border" class="com.miui.player.ui.fragment.MetaGridFragment$AlbumGridFragment" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="@string/hot_artists" style="@style/ItemGroupTitleStyle" />
+                <fragment android:gravity="top|left|center" android:id="@id/hot_artists" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_to_border" class="com.miui.player.ui.fragment.MetaGridFragment$ArtistGridFragment" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <fragment android:gravity="top|left|center" android:id="@id/suggestion_search" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.miui.player.ui.fragment.SuggestionSearchFragment" />
+</LinearLayout>

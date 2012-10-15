@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="top|left|center" android:id="@id/main_list_frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SortableListView android:gravity="top|left|center" android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/PickerListView" />
+    <miui.widget.AlphabetFastIndexer android:id="@id/fast_indexer" style="@style/AlphaFastIndexerStyle" />
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MusicActivityStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/album_wrap" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_bar">
+        <include layout="@layout/audio_player_album" />
+    </FrameLayout>
+    <ImageView android:id="@id/anim_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/audio_player_controller_bg" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    <FrameLayout android:gravity="top|left|center" android:id="@id/controller_wrap" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_bar">
+        <fragment android:gravity="top|left|center" android:id="@id/track_list_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.miui.player.ui.fragment.TrackListFragment" />
+        <RelativeLayout android:id="@id/lyric_wrap" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/audio_player_lyric" />
+        </RelativeLayout>
+    </FrameLayout>
+    <miui.widget.SpectrumVisualizer android:id="@id/spectrum_visualizer" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_above="@id/bottom_bar" android:layout_centerHorizontal="true" miui:symmetry="false" miui:sliding_dot_bar="@drawable/sliding_panel_visualization_dot_bar" miui:sliding_panel="@drawable/sliding_panel_visualization_bg" xmlns:miui="http://schemas.android.com/apk/res/miui" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/common_tabs" android:layout_width="fill_parent" android:layout_height="@dimen/play_common_height">
+            <include layout="@layout/audio_player_common" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/bottom_commit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/play_common_height">
+            <include layout="@layout/commit_bottom_2" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:gravity="top|right|center" android:id="@id/online_music_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:gravity="top|left|center" android:id="@id/secondary_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_toLeftOf="@id/online_music_logo" android:layout_alignParentTop="true" style="@style/NowplayingSecondaryText" />
+    <TextView android:textSize="@dimen/title_hint_text_size" android:gravity="top|center" android:layout_gravity="top|left|center" android:id="@id/hint_title_bar" android:paddingLeft="@dimen/title_hint_padding_horizontal" android:paddingTop="@dimen/title_hint_padding_top" android:paddingRight="@dimen/title_hint_padding_horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

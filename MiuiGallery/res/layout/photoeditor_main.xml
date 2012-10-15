@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.gallery.photoeditor.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.gallery.photoeditor.PhotoView android:id="@id/photo_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.miui.gallery.photoeditor.EffectsBar android:id="@id/effects_bar" style="@style/EffectsBar">
+        <com.miui.gallery.photoeditor.EffectsMenu android:id="@id/effects_menu" style="@style/ActionBarOuter" />
+    </com.miui.gallery.photoeditor.EffectsBar>
+    <com.miui.gallery.photoeditor.ActionBar android:id="@id/action_bar" android:layout_alignParentTop="true" style="@style/ActionBarOuter" />
+</com.miui.gallery.photoeditor.Toolbar>

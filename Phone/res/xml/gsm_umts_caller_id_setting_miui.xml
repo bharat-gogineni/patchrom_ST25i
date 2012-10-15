@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/caller_id_title_miui"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <com.android.phone.CLIRListPreference android:persistent="false" android:entries="@array/clir_choices_miui" android:title="@string/caller_id_title_miui" android:key="button_clir" android:defaultValue="DEFAULT" android:dialogTitle="@string/caller_id_title_miui" android:entryValues="@array/clir_values_miui" />
+</PreferenceScreen>

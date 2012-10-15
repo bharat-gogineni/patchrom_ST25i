@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="15" android:versionName="4.0.4-eng..20121012.140232" package="com.miui.player"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+    <application android:label="@string/music_browser_label" android:icon="@drawable/app_music" android:taskAffinity="miui.task.player" android:allowTaskReparenting="true" android:uiOptions="splitActionBarWhenNarrow">
+        <meta-data android:name="android.app.default_searchable" android:value=".ui.QueryBrowserActivity" />
+        <uses-library android:name="miui-framework" />
+        <activity android:theme="@style/MainBrowserTheme" android:name=".ui.MusicBrowserActivity" android:exported="true" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MUSIC_PLAYER" />
+                <action android:name="android.intent.action.MIUI_MUSIC_PLAYER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".receiver.MediaButtonIntentReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.OpenDownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.DeleteQuitTimerReceiver">
+            <intent-filter>
+                <action android:name="com.miui.player.QUIT" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/PickerActivityTheme" android:label="@string/mediaplaybacklabel" android:name=".ui.MediaPlaybackActivity" android:exported="true" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.miui.player.PLAYBACK_VIEWER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.miui.player.NOWPLAYING_PLAYLIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Dialog" android:name=".ui.AudioPreview" android:exported="true" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-flac" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-flac" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-flac" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="content" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-flac" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.miui.player.oneshot_open_ui" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/PickerActivityTheme" android:name=".ui.ArtistBrowserActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.miui.player.BROWSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/artistalbum" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/PickerActivityTheme" android:name=".ui.AlbumBrowserActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.miui.player.BROWSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/album" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/PickerActivityTheme" android:name=".ui.FolderBrowserActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="com.miui.player.BROWSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/folder" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/PickerActivityTheme" android:name=".ui.TrackBrowserActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.miui.player.BROWSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/track" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/OnlineBrowserTheme" android:name=".ui.OnlineMusicBrowser" android:exported="false" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.miui.player.BROWSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/online_category" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/PickerActivityTheme" android:name=".ui.OnlineAudioActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.miui.player.BROWSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/preview_track" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.miui.player.ONLINE_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MusicPickerForPlaylistTheme" android:name=".ui.TrackPickerForPlaylist" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.miui.player.TRACK_PICKER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/PickerActivityTheme" android:name=".ui.QueryBrowserActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.MEDIA_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+        <activity android:theme="@style/PickerActivityTheme" android:name=".ui.PlaylistBrowserActivity" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.miui.player.BROWSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/playlist" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/playlist" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MusicPickerTheme" android:label="@string/music_picker_title" android:name=".ui.MusicPicker" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="vnd.android.cursor.dir/audio" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.RINGTONE_PICKER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name=".ui.EqualizerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.miui.player.EQUALIZER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/SettingsActivityTheme" android:name=".ui.MusicSettings" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Dialog" android:name=".ui.ScanningProgress" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".ui.AlbumSearchResultActivity" android:exported="false" android:screenOrientation="portrait" />
+        <service android:name=".service.MediaPlaybackService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.miui.player.musicservicecommand.togglepause" />
+                <action android:name="com.miui.player.musicservicecommand.previous" />
+                <action android:name="com.miui.player.musicservicecommand.next" />
+                <action android:name="com.miui.player.remove" />
+                <action android:name="com.miui.player.requestprogress" />
+                <action android:name="com.miui.player.requestfavorite" />
+                <action android:name="com.miui.player.requeststatus" />
+                <action android:name="com.miui.player.togglefavorite" />
+                <action android:name="com.miui.player.MUSIC_META" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.AudioPreviewService" android:exported="false" />
+        <receiver android:label="@string/music_browser_label" android:icon="@drawable/widget_1x" android:name=".ui.MediaAppWidgetProvider_1x" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.miui.player.FAVORITE_CHANGED" />
+                <action android:name="com.miui.player.responsefavorite" />
+                <action android:name="com.miui.player.playbackcomplete" />
+                <action android:name="com.miui.player.metachanged" />
+                <action android:name="com.miui.player.queuechanged" />
+                <action android:name="com.miui.player.playstatechanged" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info_1x" />
+        </receiver>
+        <provider android:name=".provider.PlayerProvider" android:enabled="true" android:exported="true" android:authorities="com.miui.player" />
+    </application>
+</manifest>

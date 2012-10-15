@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:colorBackground="@null" android:orientation="vertical" android:id="@id/page_layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:colorBackgroundCacheHint="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/single_view_other" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/single_view_bottom" layout="@layout/single_view_bottom" />
+        <include android:id="@id/single_view_image_info" layout="@layout/single_view_image_info" />
+        <com.miui.gallery.bigscreen.DeviceBarWidget android:orientation="horizontal" android:id="@id/device_bar_widget" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/single_view_bottom" />
+    </RelativeLayout>
+    <RelativeLayout android:colorBackground="@null" android:id="@id/single_view_bigscreen_slideshow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:colorBackgroundCacheHint="@null"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/bigscreen_slide_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/black_frame" android:scaleType="fitXY" />
+        <ImageView android:id="@id/bigscreen_slide_exit_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bigscreen_slide_exit" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/bigscreen_slide_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.329987dip" android:text="@string/bigscrren_slide_exit" android:layout_below="@id/bigscreen_slide_exit_id" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/download_big_picture" android:background="@drawable/download_big_picture_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/photo_page_downloadbutton_bottommargin">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/download_big_left_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/download_big_picture" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@*android:color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/download_big_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/photo_page_downloadbutton_margin" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_alignParentRight="true" />
+    </LinearLayout>
+</FrameLayout>

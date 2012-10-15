@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_trash" android:id="@id/action_delete" android:visible="true" android:title="@string/delete" android:showAsAction="always" />
+    <item android:enabled="true" android:id="@id/action_set_recent_album" android:visible="false" android:showAsAction="never" />
+    <item android:icon="@drawable/ic_menu_share" android:enabled="true" android:id="@id/action_share" android:visible="false" android:title="@string/share" android:showAsAction="never" android:actionProviderClass="android.widget.ShareActionProvider" />
+</menu>

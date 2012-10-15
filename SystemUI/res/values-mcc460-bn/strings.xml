@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">কোনও WLAN নেই৷</string>
+    <string name="accessibility_wifi_one_bar">WLAN একটি বার৷</string>
+    <string name="accessibility_wifi_two_bars">WLAN দুটি বার৷</string>
+    <string name="accessibility_wifi_three_bars">WLAN তিনটি বার৷</string>
+    <string name="accessibility_wifi_signal_full">WLAN সিগন্যাল পূর্ণ৷</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">WLAN সংযুক্ত</string>
+</resources>

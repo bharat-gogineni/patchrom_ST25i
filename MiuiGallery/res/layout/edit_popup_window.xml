@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/edit_pop_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cut" android:src="@drawable/cut_icon_normal" style="@style/SingleViewEditActionButton" />
+    <ImageView android:id="@id/turn_left" android:src="@drawable/lturn_icon_normal" style="@style/SingleViewEditActionButton" />
+    <ImageView android:id="@id/turn_right" android:src="@drawable/rturn_icon_normal" style="@style/SingleViewEditActionButton" />
+    <ImageView android:id="@id/edit" android:src="@drawable/edit_icon_normal" style="@style/SingleViewEditActionButton" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">Žiadna sieť WLAN.</string>
+    <string name="accessibility_wifi_one_bar">Jedna čiarka signálu siete WLAN.</string>
+    <string name="accessibility_wifi_two_bars">Dve čiarky signálu siete WLAN.</string>
+    <string name="accessibility_wifi_three_bars">Tri čiarky signálu siete WLAN.</string>
+    <string name="accessibility_wifi_signal_full">Plný signál siete WLAN.</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">Pripojené k WLAN</string>
+</resources>

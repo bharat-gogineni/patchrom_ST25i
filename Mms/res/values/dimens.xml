@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="message_body_line_spacing_multiplier">119.99817%</item>
+    <dimen name="avatar_size_large">53.0dip</dimen>
+    <dimen name="avatar_size_medium">64.69998dip</dimen>
+    <dimen name="avatar_size_small">43.0dip</dimen>
+    <dimen name="text_font_size_huge">18.0sp</dimen>
+    <dimen name="text_font_size_large">16.0sp</dimen>
+    <dimen name="text_font_size_medium">14.0sp</dimen>
+    <dimen name="text_font_size_small">12.0sp</dimen>
+    <dimen name="text_font_size_tiny">10.0sp</dimen>
+    <dimen name="multi_recipient_contact_panel_height">50.0dip</dimen>
+    <dimen name="multi_recipient_title_info_item_height">47.0dip</dimen>
+    <item type="dimen" name="conversation_list_item_primary_font_size">@dimen/text_font_size_huge</item>
+    <item type="dimen" name="conversation_list_item_secondary_font_size">@dimen/text_font_size_small</item>
+    <dimen name="conversation_unread_text_font_size">12.0sp</dimen>
+    <item type="dimen" name="conversation_title_primary_font_size">@dimen/text_font_size_huge</item>
+    <item type="dimen" name="conversation_title_secondary_font_size">@dimen/text_font_size_small</item>
+    <item type="dimen" name="message_list_title_font_size">@dimen/text_font_size_small</item>
+    <item type="dimen" name="message_bubble_title_font_size">@dimen/text_font_size_small</item>
+    <item type="dimen" name="message_body_font_size">@dimen/text_font_size_large</item>
+    <item type="dimen" name="message_body_secondary_font_size">@dimen/text_font_size_small</item>
+    <item type="dimen" name="message_deliver_font_size">@dimen/text_font_size_small</item>
+    <dimen name="mms_bubble_image_width">55.0dip</dimen>
+    <dimen name="mms_attachment_pic_width">56.0dip</dimen>
+    <dimen name="mms_attachment_pic_height">56.0dip</dimen>
+    <dimen name="mms_attachment_padding_width">64.0dip</dimen>
+    <dimen name="mms_attachment_padding_height">64.0dip</dimen>
+    <dimen name="timed_message_padding_width">46.69998dip</dimen>
+    <dimen name="mms_download_padding_width">48.0dip</dimen>
+    <dimen name="flatshow_padding_size">5.0dip</dimen>
+    <dimen name="soft_keyboard_min_height">50.0dip</dimen>
+    <dimen name="flatshow_pageno_font_size">13.0sp</dimen>
+    <dimen name="recipient_row_height">38.69998dip</dimen>
+    <dimen name="message_list_header_padding">5.0dip</dimen>
+    <item type="dimen" name="counter_font_size">@dimen/text_font_size_small</item>
+    <dimen name="list_item_padding_outer">13.299988dip</dimen>
+    <dimen name="list_item_padding_inner">6.6999817dip</dimen>
+    <dimen name="recent_contact_height_2_rows">37.299988dip</dimen>
+    <dimen name="recent_contact_height_1_rows">37.299988dip</dimen>
+    <dimen name="conversation_list_item_from_top_ascent">3.0dip</dimen>
+    <dimen name="conversation_list_item_from_right_padding">3.0dip</dimen>
+    <dimen name="conversation_list_item_date_right_padding">6.0dip</dimen>
+    <dimen name="conversation_list_item_indicator_padding">3.0dip</dimen>
+    <dimen name="conversation_list_item_indicator_size">12.0dip</dimen>
+    <dimen name="conversation_list_item_height">80.0dip</dimen>
+</resources>

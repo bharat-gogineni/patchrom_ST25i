@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="top|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+            <EditText android:id="@id/fdn_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:hint="@string/sim_contact_name_miui" android:scrollHorizontally="true" android:singleLine="true" android:capitalize="words" android:autoText="false" android:inputType="textPersonName" />
+            <EditText android:id="@id/fdn_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:hint="@string/sim_contact_number_miui" android:scrollHorizontally="true" android:singleLine="true" android:capitalize="none" android:autoText="false" android:inputType="phone" />
+            <EditText android:id="@id/fdn_pin2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:hint="@string/enter_pin2_text_miui" android:scrollHorizontally="true" android:singleLine="true" android:inputType="textPassword" />
+            <Button android:textColor="@*android:color/white" android:id="@id/fdn_delete" android:background="@drawable/incall_button_red_miui" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/delete_sim_contact_confirm_title_miui" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+        <Button android:id="@id/fdn_ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@*android:string/ok" android:layout_weight="1.0" />
+        <Button android:id="@id/fdn_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@*android:string/cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

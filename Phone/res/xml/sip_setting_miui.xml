@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sip_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:persistent="true" android:entries="@array/sip_call_options_entries" android:title="@string/sip_call_options_title" android:key="button_sip_call_options" android:entryValues="@array/sip_call_options_values" />
+    <ListPreference android:persistent="true" android:entries="@array/sip_call_options_wifi_only_entries" android:title="@string/sip_call_options_title" android:key="button_sip_call_options_wifi_only" android:dialogTitle="@string/sip_call_options_wifi_only_title" android:entryValues="@array/sip_call_options_values" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/sip_receive_calls" android:key="sip_receive_calls_key" android:summary="@string/sip_receive_calls_summary" />
+    <PreferenceCategory android:title="@string/sip_account_list" android:key="sip_account_list" />
+</PreferenceScreen>

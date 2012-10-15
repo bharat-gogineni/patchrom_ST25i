@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/messaging_style_bubble" android:background="@drawable/messaging_style_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/messaging_style_bubble_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/messaging_style_bubble_group" />
+        <TextView android:textAppearance="@style/TextAppearance.Primary" android:id="@id/messaging_style_bubble_text" android:background="@drawable/messaging_style_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pref_messaging_bubble_title" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/messaging_style_list" android:background="@drawable/messaging_style_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/messaging_style_list" />
+        <TextView android:textAppearance="@style/TextAppearance.Primary" android:id="@id/messaging_style_list_text" android:background="@drawable/messaging_style_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pref_messaging_list_title" />
+    </LinearLayout>
+</LinearLayout>

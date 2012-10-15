@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="64.0dip" style="?android:attr/windowTitleStyle" />
+    <View android:background="@*android:color/holo_orange_dark" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <Button android:id="@id/date_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/time_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" />
+    <DatePicker android:id="@id/date_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TimePicker android:id="@id/time_picker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:baselineAligned="false">
+        <Button android:id="@id/ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/yes" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/no" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

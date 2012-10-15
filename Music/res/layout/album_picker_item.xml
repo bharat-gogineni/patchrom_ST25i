@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/spacing_picker_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:padding="@dimen/spacing_picker_item" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/album_picker_item_image" />
+            <CheckBox android:layout_gravity="top|right|center" android:id="@id/batch_selection_check" android:focusable="false" android:visibility="gone" android:clickable="false" android:checked="true" style="@style/BatchSelectionCheckBoxStyle" />
+        </FrameLayout>
+        <ImageView android:id="@id/play_indicator" android:background="@drawable/album_playing_indicator_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+    </FrameLayout>
+    <include layout="@layout/album_picker_item_text" />
+</LinearLayout>

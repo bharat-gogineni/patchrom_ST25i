@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="callcard_double_time_margin_top">8.0dip</dimen>
+    <dimen name="callcard_name_min_text_size">40.0px</dimen>
+    <dimen name="miui_text_appearance_name_text_size">22.0sp</dimen>
+    <dimen name="incall_vertical_sliding_panel_initial_height">222.0dip</dimen>
+    <dimen name="incall_vertical_sliding_bar_height">111.0dip</dimen>
+    <dimen name="incall_vertical_sliding_bar_margin_bottom">50.0dip</dimen>
+    <dimen name="incall_vertical_sliding_hint_anim_margin_top">150.0dip</dimen>
+    <dimen name="number_picker_min_width">83.0dip</dimen>
+</resources>

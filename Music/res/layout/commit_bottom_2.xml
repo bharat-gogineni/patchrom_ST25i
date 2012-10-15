@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:paddingLeft="@dimen/spacing_to_border" android:paddingRight="@dimen/spacing_to_border" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/commit_button_text" android:gravity="center" android:layout_gravity="left|center" android:id="@id/button_left" android:background="@drawable/media_player_bottom_commit_btn_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/confirm" android:layout_weight="1.0" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/commit_button_text" android:gravity="center" android:layout_gravity="right|center" android:id="@id/button_right" android:background="@drawable/media_player_bottom_commit_btn_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+</LinearLayout>

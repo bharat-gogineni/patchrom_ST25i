@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.thememanager.view.ComponentCategoryView android:orientation="vertical" android:paddingLeft="12.5dip" android:paddingRight="12.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/listSeparatorTextViewStyle" />
+    <com.android.thememanager.view.FixedHeightGridView android:gravity="center" android:id="@id/grid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+</com.android.thememanager.view.ComponentCategoryView>

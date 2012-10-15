@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.home.launcher.gadget.FlipClock android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.miui.home.launcher.gadget.AwesomeView android:layout_gravity="top|left|center" android:id="@id/bottom_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.miui.home.launcher.gadget.FlipClock>

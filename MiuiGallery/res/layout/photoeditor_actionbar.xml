@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:background="@drawable/single_view_menu_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/action_bar_back" android:src="@drawable/single_view_back_n" style="@style/SingleViewBackButton" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/undo_button" android:src="@drawable/photoeditor_undo" style="@style/SingleViewButton" />
+        <ImageButton android:id="@id/redo_button" android:src="@drawable/photoeditor_redo" style="@style/SingleViewButton" />
+        <ViewSwitcher android:id="@id/save_share_buttons" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:id="@id/save_button" android:layout_width="fill_parent" android:src="@drawable/ic_menu_save" style="@style/SingleViewButton" />
+            <ImageButton android:id="@id/share_button" android:layout_width="fill_parent" android:src="@drawable/ic_menu_share_holo_light" style="@style/SingleViewButton" />
+        </ViewSwitcher>
+    </LinearLayout>
+</LinearLayout>

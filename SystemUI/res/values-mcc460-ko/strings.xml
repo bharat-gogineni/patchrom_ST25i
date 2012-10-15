@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_settings_wifi_button">WLAN</string>
+    <string name="accessibility_no_wifi">WLAN가 없습니다.</string>
+    <string name="accessibility_wifi_one_bar">WLAN신호 막대가 한 개입니다.</string>
+    <string name="accessibility_wifi_two_bars">WLAN신호 막대가 두 개입니다.</string>
+    <string name="accessibility_wifi_three_bars">WLAN신호 막대가 세 개입니다.</string>
+    <string name="accessibility_wifi_signal_full">WLAN신호가 강합니다.</string>
+    <string name="accessibility_data_connection_wifi">WLAN</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">WLAN연결됨</string>
+</resources>

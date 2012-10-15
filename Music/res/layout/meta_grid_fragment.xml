@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/online_loading_status_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LoadStatusBarStyle">
+        <include layout="@layout/online_loading_status_bar" />
+    </RelativeLayout>
+    <view android:id="@*android:id/list" android:paddingLeft="@dimen/spacing_picker_item" android:paddingRight="@dimen/spacing_picker_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/spacing_to_border" android:listSelector="@*android:color/transparent" android:numColumns="3" class="com.miui.player.ui.view.FixedGridView" style="@style/PickerListView" />
+</LinearLayout>

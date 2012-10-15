@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:id="@id/clickable_region" android:background="@drawable/title_large_selector" android:clickable="true" android:layout_height="@dimen/home_page_title_height" style="@style/HomePageTitleContainer">
+            <TextView android:id="@id/item_text" android:layout_alignParentLeft="true" style="@style/HomePageTitleText" />
+            <ImageView style="@style/HomePageTitleNavigatorIcon" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/home_page_selection_mask_bottom" style="@style/HomePageSelectionMask" />
+</FrameLayout>

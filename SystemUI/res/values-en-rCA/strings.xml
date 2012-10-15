@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screenshot_saving_ticker">Saving screenshot…</string>
+    <string name="screenshot_saving_title">Saving screenshot…</string>
+    <string name="accessibility_airplane_mode">Airplane mode</string>
+    <string name="status_bar_settings_signal_meter_disconnected">No Internet connection</string>
+</resources>

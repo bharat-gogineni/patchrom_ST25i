@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/EffectsContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.gallery.photoeditor.actions.ColorTemperatureAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_temperature" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/temperature" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.ColorTemperatureAction>
+    <com.miui.gallery.photoeditor.actions.SaturationAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_saturation" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/saturation" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.SaturationAction>
+    <com.miui.gallery.photoeditor.actions.GrayscaleAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_grayscale" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/grayscale" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.GrayscaleAction>
+    <com.miui.gallery.photoeditor.actions.SepiaAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_sepia" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/sepia" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.SepiaAction>
+    <com.miui.gallery.photoeditor.actions.NegativeAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_negative" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/negative" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.NegativeAction>
+    <com.miui.gallery.photoeditor.actions.TintAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_tint" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/tint" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.TintAction>
+    <com.miui.gallery.photoeditor.actions.DuotoneAction style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_duotone" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/duotone" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.DuotoneAction>
+    <com.miui.gallery.photoeditor.actions.DoodleAction android:tag="@string/doodle_tooltip" style="@style/Effect">
+        <ImageButton android:id="@id/effect_button" android:src="@drawable/photoeditor_effect_doodle" style="@style/EffectIcon" />
+        <TextView android:id="@id/effect_label" android:text="@string/doodle" style="@style/EffectLabel" />
+    </com.miui.gallery.photoeditor.actions.DoodleAction>
+</LinearLayout>
